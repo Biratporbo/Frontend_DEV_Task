@@ -1,3 +1,101 @@
+# My Portfolio
+
+A responsive React portfolio website for presenting personal information, education, technical skills, and contact details in a clean single-page layout.
+
+## Links
+
+- **GitHub:** [Frontend_DEV_Task](https://github.com/Biratporbo/Frontend_DEV_Task)
+- **Live site:** [my-portfolio-eight-rust-78.vercel.app](https://my-portfolio-eight-rust-78.vercel.app/)
+
+## Features
+
+- Responsive portfolio layout for desktop and mobile screens
+- Simple navigation between page sections
+- About Me section for a personal introduction
+- Education section for academic background
+- Skills section for technical strengths
+- Contact section with email, phone, and location details
+- Reusable React components for each major section
+- Production deployment configured with Vercel
+
+## Built With
+
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Create React App
+- Vercel
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── About.js
+│   ├── Contact.js
+│   ├── Education.js
+│   ├── Footer.js
+│   ├── Header.js
+│   └── Skills.js
+├── App.js
+├── App.css
+├── index.css
+└── index.js
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or later
+- npm
+
+### Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/Biratporbo/Frontend_DEV_Task.git
+cd Frontend_DEV_Task/my-portfolio
+npm install
+```
+
+### Run Locally
+
+Start the development server:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Create a Production Build
+
+```bash
+npm run build
+```
+
+The optimized files are generated in the `build` directory.
+
+### Run Tests
+
+```bash
+npm test
+```
+
+## Deployment
+
+The project is deployed on Vercel. A production deployment can be created with:
+
+```bash
+npx vercel --prod
+```
+
+## License
+
+This project is available for personal and educational use.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

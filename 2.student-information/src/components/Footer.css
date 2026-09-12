@@ -1,0 +1,24 @@
+/* src/components/Footer.css */
+
+.portal-footer {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 1.75rem 1.5rem;
+  border-top: 1px solid #1e293b;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

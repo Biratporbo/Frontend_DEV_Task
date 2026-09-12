@@ -1,1 +1,173 @@
-# Frontend_DEV_Task
+# 🚀 Frontend Development Tasks & Projects
+
+A centralized repository containing frontend development assignments, interactive web applications, and modular UI components built using **React 19**, modern **JavaScript (ES6+)**, and responsive **CSS3**.
+
+Each project is designed with a focus on clean architecture, component reusability, unidirectional data flow, responsive design, and production readiness, deployed live via **Vercel**.
+
+---
+
+## 📑 Projects Directory
+
+| # | Project Name | Directory | Live Demo | Core Concepts & Highlights |
+| :-: | :--- | :--- | :--- | :--- |
+| **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | [Live Demo 🌐](https://my-portfolio-eight-rust-78.vercel.app/) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
+| **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
+
+---
+
+## 🌟 Project Overviews
+
+### 1. [Personal Portfolio Website](./1.my-portfolio)
+
+A clean, responsive personal portfolio website designed to showcase developer background, academic qualifications, technical skills, and contact channels in an intuitive single-page interface.
+
+- **Live URL:** [https://my-portfolio-eight-rust-78.vercel.app/](https://my-portfolio-eight-rust-78.vercel.app/)
+- **Key Features:**
+  - 📱 **Mobile-First Responsive Layout:** Adapts seamlessly across mobile, tablet, and desktop viewports.
+  - 🧭 **Structured Section Navigation:** Quick navigation between About, Education, Skills, and Contact sections.
+  - 🧩 **Modular Component Design:** Clean separation of concerns with standalone components for each section (`Header`, `About`, `Education`, `Skills`, `Contact`, `Footer`).
+  - ⚡ **Optimized Performance:** Fast load times with zero bloat and clean CSS styling.
+
+#### Quick Run:
+```bash
+cd 1.my-portfolio
+npm install
+npm start
+```
+
+---
+
+### 2. [Student Information Management Portal](./2.student-information)
+
+An interactive student directory portal demonstrating advanced **React Props passing**, **state orchestration**, **unidirectional data flow**, and **data manipulation** (sorting & filtering).
+
+- **Live URL:** [https://2student-information.vercel.app/](https://2student-information.vercel.app/)
+- **Key Features:**
+  - 🧱 **Hierarchical Props Flow:** Strict prop-drilling architecture from root state (`App`) down through `Header`, `StudentList`, and individual `StudentCard` components.
+  - 📊 **Dynamic CGPA Sorting:**
+    - High-to-Low (↓) with automated real-time rank computation (`Rank #1`, `Rank #2`, etc.).
+    - Low-to-High (↑) sorting.
+    - Default roster reset (↺).
+  - 🔍 **Real-Time Filtering & Search:** Instant multi-field search (by student name or roll number) coupled with department dropdown filtering.
+  - 🎨 **Visual Performance Indicators:** Color-coded CGPA badges and progress meters indicating performance tiers (Outstanding / Dean's List, Very Good, Good, Satisfactory).
+  - 🛡️ **Graceful Fallbacks:** SVG avatar fallback mechanism for handling broken or missing profile images without layout shifts.
+  - 🧪 **Unit Tested:** Comprehensive test suite validating sorting, filtering, and component rendering using Jest & React Testing Library.
+
+#### Quick Run:
+```bash
+cd 2.student-information
+npm install
+npm start
+```
+
+---
+
+## 📁 Repository Structure
+
+```text
+Frontend_DEV_Task/
+├── 1.my-portfolio/                 # Task 1: Personal Portfolio
+│   ├── public/                     # Public assets & HTML template
+│   ├── src/
+│   │   ├── components/             # Modular UI components
+│   │   │   ├── About.js
+│   │   │   ├── Contact.js
+│   │   │   ├── Education.js
+│   │   │   ├── Footer.js
+│   │   │   ├── Header.js
+│   │   │   └── Skills.js
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── index.css
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
+├── 2.student-information/          # Task 2: Student Information Management Portal
+│   ├── public/                     # Public assets & HTML template
+│   ├── src/
+│   │   ├── components/             # Reusable UI components & styles
+│   │   │   ├── Footer.css / .js
+│   │   │   ├── Header.css / .js
+│   │   │   ├── StudentCard.css / .js
+│   │   │   └── StudentList.css / .js
+│   │   ├── data/                   # Student dataset source
+│   │   │   └── studentsData.js
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── App.test.js             # Automated unit tests
+│   │   ├── index.css
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
+└── README.md                       # Main repository README (this file)
+```
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend Library:** [React 19](https://react.dev/)
+- **Language:** JavaScript (ES6+ / Modern ECMAScript)
+- **Styling:** CSS3 (Flexbox, CSS Grid, Custom Properties, Media Queries)
+- **Tooling:** Create React App (`react-scripts`)
+- **Testing:** [Jest](https://jestjs.io/) & [React Testing Library](https://testing-library.com/)
+- **Hosting & CI/CD:** [Vercel](https://vercel.com/)
+- **Version Control:** Git & [GitHub](https://github.com/Biratporbo/Frontend_DEV_Task)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your local machine:
+- **Node.js** (v18.0.0 or higher recommended)
+- **npm** (v9.0.0 or higher) or **yarn**
+
+### Cloning the Repository
+
+```bash
+git clone https://github.com/Biratporbo/Frontend_DEV_Task.git
+cd Frontend_DEV_Task
+```
+
+### Running a Project Locally
+
+Choose the project you wish to explore and run the following commands:
+
+#### For Portfolio:
+```bash
+cd 1.my-portfolio
+npm install
+npm start
+```
+The app will launch at `http://localhost:3000`.
+
+#### For Student Information Portal:
+```bash
+cd 2.student-information
+npm install
+npm start
+```
+The app will launch at `http://localhost:3000`.
+
+To run tests in the Student Information Portal:
+```bash
+npm test -- --watchAll=false
+```
+
+---
+
+## 👤 Author
+
+- **Developer:** Birat Dey
+- **GitHub:** [@Biratporbo](https://github.com/Biratporbo)
+- **Repository:** [Frontend_DEV_Task](https://github.com/Biratporbo/Frontend_DEV_Task)
+
+---
+
+## 📄 License
+
+This repository and its projects are created for educational and frontend development assignment purposes.

@@ -57,7 +57,7 @@ Clone the repository and install the dependencies:
 
 ```bash
 git clone https://github.com/Biratporbo/Frontend_DEV_Task.git
-cd Frontend_DEV_Task/my-portfolio
+cd Frontend_DEV_Task/1.my-portfolio
 npm install
 ```
 

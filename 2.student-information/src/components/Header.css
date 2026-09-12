@@ -1,0 +1,136 @@
+/* src/components/Header.css */
+
+.portal-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #3b82f6 100%);
+  color: #ffffff;
+  padding: 2.25rem 1.5rem 2rem;
+  box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25), 0 8px 10px -6px rgba(37, 99, 235, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+}
+
+.brand-icon {
+  font-size: 2.5rem;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  width: 3.75rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.assignment-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.portal-title {
+  margin: 0;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .portal-title {
+    font-size: 2.2rem;
+  }
+}
+
+.portal-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #e0e7ff;
+  max-width: 600px;
+  line-height: 1.45;
+}
+
+.header-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.stat-chip {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.85rem;
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 105px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.stat-chip:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.stat-chip.highlight {
+  background: rgba(245, 158, 11, 0.22);
+  border-color: rgba(251, 191, 36, 0.45);
+}
+
+.stat-label {
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #c7d2fe;
+  font-weight: 600;
+}
+
+.stat-chip.highlight .stat-label {
+  color: #fde68a;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 0.15rem;
+}
+

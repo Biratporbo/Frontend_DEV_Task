@@ -12,7 +12,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | :-: | :--- | :--- | :--- | :--- |
 | **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | [Live Demo 🌐](https://my-portfolio-eight-rust-78.vercel.app/) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
 | **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
-| **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | *Local / Deployable* | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
+| **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
 
 ---
 
@@ -67,6 +67,7 @@ npm start
 
 A practical, clean, state-driven employee directory designed for a farm management system. It showcases robust **state management (`useState`)**, **event handling**, and **conditional rendering** to manage staff across diverse agricultural departments.
 
+- **Live URL:** [https://3employee-directory.vercel.app](https://3employee-directory.vercel.app)
 - **Key Features:**
   - 🌾 **Comprehensive Farm Staff Data:** Maintains Employee Name, ID, Department, Gender, Phone Number, Local Address, and Permanent Address.
   - ➕ **Add & Edit Records:** Interactive form with input validation, duplicate ID prevention, and an option to mirror local address to permanent address.

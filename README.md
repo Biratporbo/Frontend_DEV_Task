@@ -204,6 +204,3 @@ npm test -- --watchAll=false
 
 ---
 
-## 📄 License
-
-This repository and its projects are created for educational and frontend development assignment purposes.

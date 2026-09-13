@@ -1,0 +1,159 @@
+.employee-table-container {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.employee-table th {
+  background-color: #f8fafc;
+  color: #334155;
+  padding: 12px 14px;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.actions-header {
+  text-align: center;
+}
+
+.employee-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+  color: #1e293b;
+}
+
+.employee-row:hover {
+  background-color: #f9fbf8;
+}
+
+.id-badge {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #c8e6c9;
+  display: inline-block;
+}
+
+.dept-tag {
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.emp-phone-cell {
+  font-family: monospace;
+  font-size: 0.88rem;
+  color: #334155;
+}
+
+.emp-address-cell {
+  color: #64748b;
+  max-width: 200px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+.btn-action {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-view {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.btn-view:hover {
+  background-color: #bae6fd;
+}
+
+.btn-edit {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.btn-edit:hover {
+  background-color: #fde68a;
+}
+
+.btn-delete {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-delete:hover {
+  background-color: #fecaca;
+}
+
+/* Empty State */
+.empty-state-box {
+  background-color: #ffffff;
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.empty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.empty-title {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+.empty-text {
+  margin: 0 0 16px 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.btn-clear-empty {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-clear-empty:hover {
+  background-color: #1b5e20;
+}
+

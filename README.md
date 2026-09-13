@@ -1,6 +1,6 @@
 # 🚀 Frontend Development Tasks & Projects
 
-A centralized repository containing frontend development assignments, interactive web applications, and modular UI components built using **React 19**, modern **JavaScript (ES6+)**, and responsive **CSS3**.
+A centralized repository containing frontend development projects, interactive web applications, and modular UI components built using **React 19**, modern **JavaScript (ES6+)**, and responsive **CSS3**.
 
 Each project is designed with a focus on clean architecture, component reusability, unidirectional data flow, responsive design, and production readiness, deployed live via **Vercel**.
 
@@ -12,6 +12,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | :-: | :--- | :--- | :--- | :--- |
 | **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | [Live Demo 🌐](https://my-portfolio-eight-rust-78.vercel.app/) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
 | **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
+| **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | *Local / Deployable* | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
 
 ---
 
@@ -62,42 +63,68 @@ npm start
 
 ---
 
+### 3. [Farm Employee Directory](./3.employee-directory)
+
+A practical, clean, state-driven employee directory designed for a farm management system. It showcases robust **state management (`useState`)**, **event handling**, and **conditional rendering** to manage staff across diverse agricultural departments.
+
+- **Key Features:**
+  - 🌾 **Comprehensive Farm Staff Data:** Maintains Employee Name, ID, Department, Gender, Phone Number, Local Address, and Permanent Address.
+  - ➕ **Add & Edit Records:** Interactive form with input validation, duplicate ID prevention, and an option to mirror local address to permanent address.
+  - 🗑️ **Delete with Confirmation:** Safe deletion workflow with browser confirmation prompts and feedback messages.
+  - 🔍 **Real-time Search:** Instant search across employee names, IDs, and phone numbers.
+  - 🏢 **Department Filtering:** Quick filter dropdown to isolate staff by agricultural departments or view all departments combined.
+  - 📊 **Dynamic Employee Counters:** Live status counters showing total staff, matching records, and active departments.
+  - 👁️ **Full Address Inspector:** Modal dialog to view complete local and permanent addresses without cluttering table rows.
+
+#### Quick Run:
+```bash
+cd 3.employee-directory
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
 Frontend_DEV_Task/
-├── 1.my-portfolio/                 # Task 1: Personal Portfolio
+├── 1.my-portfolio/                 # Project 1: Personal Portfolio
 │   ├── public/                     # Public assets & HTML template
 │   ├── src/
 │   │   ├── components/             # Modular UI components
-│   │   │   ├── About.js
-│   │   │   ├── Contact.js
-│   │   │   ├── Education.js
-│   │   │   ├── Footer.js
-│   │   │   ├── Header.js
-│   │   │   └── Skills.js
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   ├── index.css
-│   │   └── index.js
+│   │   ├── App.css / .js
+│   │   ├── index.css / .js
+│   │   └── ...
 │   ├── package.json
 │   └── README.md
 │
-├── 2.student-information/          # Task 2: Student Information Management Portal
+├── 2.student-information/          # Project 2: Student Information Portal
 │   ├── public/                     # Public assets & HTML template
 │   ├── src/
 │   │   ├── components/             # Reusable UI components & styles
-│   │   │   ├── Footer.css / .js
-│   │   │   ├── Header.css / .js
-│   │   │   ├── StudentCard.css / .js
-│   │   │   └── StudentList.css / .js
 │   │   ├── data/                   # Student dataset source
-│   │   │   └── studentsData.js
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   ├── App.test.js             # Automated unit tests
-│   │   ├── index.css
-│   │   └── index.js
+│   │   ├── App.css / .js / .test.js
+│   │   ├── index.css / .js
+│   │   └── ...
+│   ├── package.json
+│   └── README.md
+│
+├── 3.employee-directory/           # Project 3: Farm Employee Directory
+│   ├── public/                     # Public assets & HTML template
+│   ├── src/
+│   │   ├── components/             # Modular UI components & styles
+│   │   │   ├── EmployeeDetailModal.css / .js
+│   │   │   ├── EmployeeForm.css / .js
+│   │   │   ├── EmployeeList.css / .js
+│   │   │   ├── Navbar.css / .js
+│   │   │   ├── SearchFilter.css / .js
+│   │   │   └── StatsBar.css / .js
+│   │   ├── data/                   # Initial farm employee records
+│   │   │   └── initialEmployees.js
+│   │   ├── App.css / .js / .test.js
+│   │   ├── index.css / .js
+│   │   └── setupTests.js
 │   ├── package.json
 │   └── README.md
 │
@@ -153,7 +180,15 @@ npm start
 ```
 The app will launch at `http://localhost:3000`.
 
-To run tests in the Student Information Portal:
+#### For Farm Employee Directory:
+```bash
+cd 3.employee-directory
+npm install
+npm start
+```
+The app will launch at `http://localhost:3000`.
+
+To run tests in the Farm Employee Directory:
 ```bash
 npm test -- --watchAll=false
 ```

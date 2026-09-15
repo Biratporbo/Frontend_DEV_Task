@@ -1,0 +1,91 @@
+/* Dynamic Backgrounds */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.8s ease;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Beautiful vibrant gradients for different weather */
+.default-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.clear-bg {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.cloud-bg {
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+.rain-bg {
+  background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+}
+
+.snow-bg {
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.storm-bg {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.dashboard-overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.app-header p {
+  margin: 8px 0 0 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Glassmorphism Panel Base */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px 30px;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}

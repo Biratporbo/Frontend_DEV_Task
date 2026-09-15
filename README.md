@@ -13,6 +13,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | [Live Demo 🌐](https://my-portfolio-eight-rust-78.vercel.app/) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
 | **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
 | **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
+| **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | *Local / Config Required* | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
 
 ---
 
@@ -81,6 +82,27 @@ A practical, clean, state-driven employee directory designed for a farm manageme
 ```bash
 cd 3.employee-directory
 npm install
+npm start
+```
+
+---
+
+### 4. [Weather Dashboard](./4.weather-dashboard)
+
+A basic, clean weather application demonstrating asynchronous API integration. It uses **`fetch`**, **`async/await`**, and the **`useEffect`** hook to retrieve live weather data from the OpenWeatherMap API.
+
+- **Key Features:**
+  - 🌡️ **Live Metrics:** Displays Temperature (Celsius), Humidity, Wind Speed, Sunrise, and Sunset times.
+  - 🔍 **City Search:** Dynamic search bar to fetch weather for any valid city.
+  - 🖼️ **Dynamic Icons:** Renders official OpenWeatherMap image icons based on current weather conditions.
+  - ⏳ **Loading State:** Includes a clean CSS loading spinner during network requests.
+  - 🛡️ **Error Handling:** Robust error management for invalid cities, network failures, or missing API keys.
+
+#### Quick Run:
+```bash
+cd 4.weather-dashboard
+npm install
+# Note: Ensure you add your OpenWeatherMap API key to the .env file before starting!
 npm start
 ```
 

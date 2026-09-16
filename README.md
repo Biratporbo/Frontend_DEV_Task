@@ -103,7 +103,6 @@ A modern, stunning "glassmorphism" weather application demonstrating asynchronou
 ```bash
 cd 4.weather-dashboard
 npm install
-# Note: Ensure you add your OpenWeatherMap API key to the .env file before starting!
 npm start
 ```
 

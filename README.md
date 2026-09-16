@@ -14,6 +14,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
 | **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
 | **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | [Live Demo 🌐](https://4weather-dashboard.vercel.app) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
+| **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | *Local / Config Required* | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
 
 ---
 
@@ -104,6 +105,25 @@ A modern, stunning "glassmorphism" weather application demonstrating asynchronou
 cd 4.weather-dashboard
 npm install
 npm start
+```
+
+---
+
+### 5. [Online Shopping Cart](./5.online-shopping-cart)
+
+A clean, attractive, and functional E-Commerce shopping cart. This project demonstrates advanced global state management using React's **Context API** and the **`useReducer`** hook.
+
+- **Key Features:**
+  - 🛍️ **Cart Management:** Add products, update quantities, and remove items dynamically.
+  - 🧠 **Global State (`useReducer`):** Centralized logic for complex cart state.
+  - 🎟️ **Promotional Coupons:** Apply discount codes (`SAVE10`, `SAVE20`) to dynamically reduce the subtotal by a percentage.
+  - 📊 **Financial Breakdown:** Calculates Subtotal, Coupon Discounts, GST (18%), and Grand Total.
+
+#### Quick Run:
+```bash
+cd 5.online-shopping-cart
+npm install
+npm run dev
 ```
 
 ---

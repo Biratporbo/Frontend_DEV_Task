@@ -1,0 +1,26 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e5e3de;
+}
+
+.header-inner {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.cart-badge {
+  background: #242424;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+}

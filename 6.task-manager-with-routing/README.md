@@ -2,7 +2,6 @@
 
 A modern single-page Task Management web application built with **React 18** and **React Router v6**. This application allows users to create, view, update, complete, filter, and delete tasks across dedicated views with nested layouts, dynamic parameter resolution, and route authentication protection.
 
-**Live Demo:** [https://6task-manager-with-routing.vercel.app](https://6task-manager-with-routing.vercel.app)
 
 ## ✨ Core Features
 

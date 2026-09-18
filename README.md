@@ -16,6 +16,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | [Live Demo 🌐](https://4weather-dashboard.vercel.app) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
 | **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | [Live Demo 🌐](https://5online-shopping-cart.vercel.app) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
 | **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | [Live Demo 🌐](https://6task-manager-with-routing.vercel.app) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
+| **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | [Live Demo 🌐](https://7implementauthenticationsystem.vercel.app) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
 
 ---
 
@@ -150,6 +151,28 @@ npm start
 
 ---
 
+### 7. [Authentication System & Secure Task Workspace](./7.implement_authentication_system)
+
+A comprehensive authentication and security suite integrated with the Task Management workspace. Features RFC 7519 simulated JWT tokens, real-time password strength analytics, dual-mode persistence (localStorage/sessionStorage), and route protection.
+
+- **Live URL:** [https://7implementauthenticationsystem.vercel.app](https://7implementauthenticationsystem.vercel.app)
+- **Key Features:**
+  - 🔑 **Simulated JWT Token (RFC 7519):** Generates and validates standard 3-part Base64Url tokens with encoded claims and expiration stamps.
+  - 🛡️ **Interactive Token Inspector:** Dedicated modal to inspect raw token segments, decoded JSON claims, and test token invalidation.
+  - 📊 **Password Strength Evaluator:** Real-time entropy scoring (Weak, Fair, Good, Strong) with visual bar and live requirement indicators.
+  - 📝 **Input Validation:** Enforces non-empty username and password fields with inline touch-state error notifications.
+  - 💾 **Remember User:** Toggles token persistence between `localStorage` (persistent) and `sessionStorage` (active session only).
+  - 💼 **Task Management Integration:** Full protected workspace featuring Dashboard analytics, Active Tasks filters, Add Task, and Completed Archive.
+
+#### Quick Run:
+```bash
+cd 7.implement_authentication_system
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -210,6 +233,16 @@ Frontend_DEV_Task/
 │   │   ├── components/             # Layout, Navigation, ProtectedRoute, TaskCard
 │   │   ├── context/                # AuthContext, TaskContext
 │   │   ├── pages/                  # Dashboard, TasksLayout, Tasks, AddTask, TaskDetails, EditTask, CompletedTasks
+│   │   ├── App.css / .js
+│   │   └── index.css / .js
+│   ├── package.json
+├── 7.implement_authentication_system/ # Project 7: Authentication System
+│   ├── public/
+│   ├── src/
+│   │   ├── components/             # Layout, Navigation, PasswordStrengthMeter, TokenInspectorModal, ProtectedRoute
+│   │   ├── context/                # AuthContext, TaskContext
+│   │   ├── services/               # jwtService (RFC 7519), passwordStrength
+│   │   ├── pages/                  # Login, Dashboard, TasksLayout, Tasks, AddTask, TaskDetails, EditTask, CompletedTasks
 │   │   ├── App.css / .js
 │   │   └── index.css / .js
 │   ├── package.json
@@ -290,6 +323,13 @@ npm run dev
 #### For Task Manager with Routing:
 ```bash
 cd 6.task-manager-with-routing
+npm install
+npm start
+```
+
+#### For Authentication System:
+```bash
+cd 7.implement_authentication_system
 npm install
 npm start
 ```

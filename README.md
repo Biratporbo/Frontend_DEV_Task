@@ -15,6 +15,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
 | **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | [Live Demo 🌐](https://4weather-dashboard.vercel.app) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
 | **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | [Live Demo 🌐](https://5online-shopping-cart.vercel.app) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
+| **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | *Local / Deployable* | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
 
 ---
 
@@ -129,6 +130,25 @@ npm run dev
 
 ---
 
+### 6. [Task Manager with Routing](./6.task-manager-with-routing)
+
+A single-page task management application that heavily utilizes `react-router-dom` to handle navigation, protected routes, and dynamic URL parameters.
+
+- **Key Features:**
+  - 🛡️ **Protected Routing:** Prevents access to the dashboard and tasks without "logging in" first.
+  - 🔗 **Dynamic URLs:** Uses `/tasks/:id` to fetch and render full details for a specific task based on the URL parameter.
+  - 📝 **Task Management:** Create, view, update, and close tasks. Tasks feature priorities, categories, and due dates.
+  - 📁 **Central State:** State is maintained via `Context API` so it persists across all route changes.
+
+#### Quick Run:
+```bash
+cd 6.task-manager-with-routing
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -171,6 +191,28 @@ Frontend_DEV_Task/
 │   │   └── setupTests.js
 │   ├── package.json
 │   └── README.md
+├── 4.weather-dashboard/            # Project 4: Weather Dashboard
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── README.md
+│
+├── 5.online-shopping-cart/          # Project 5: Online Shopping Cart
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── README.md
+│
+├── 6.task-manager-with-routing/     # Project 6: Task Manager with Routing
+│   ├── public/
+│   ├── src/
+│   │   ├── components/             # Layout, Navigation, ProtectedRoute, TaskCard
+│   │   ├── context/                # AuthContext, TaskContext
+│   │   ├── pages/                  # Dashboard, TasksLayout, Tasks, AddTask, TaskDetails, EditTask, CompletedTasks
+│   │   ├── App.css / .js
+│   │   └── index.css / .js
+│   ├── package.json
+│   └── README.md
 │
 └── README.md                       # Main repository README (this file)
 ```
@@ -179,7 +221,8 @@ Frontend_DEV_Task/
 
 ## 🛠️ Technology Stack
 
-- **Frontend Library:** [React 19](https://react.dev/)
+- **Frontend Library:** [React 18 & 19](https://react.dev/)
+- **Routing:** [React Router v6](https://reactrouter.com/)
 - **Language:** JavaScript (ES6+ / Modern ECMAScript)
 - **Styling:** CSS3 (Flexbox, CSS Grid, Custom Properties, Media Queries)
 - **Tooling:** Create React App (`react-scripts`)
@@ -214,7 +257,6 @@ cd 1.my-portfolio
 npm install
 npm start
 ```
-The app will launch at `http://localhost:3000`.
 
 #### For Student Information Portal:
 ```bash
@@ -222,7 +264,6 @@ cd 2.student-information
 npm install
 npm start
 ```
-The app will launch at `http://localhost:3000`.
 
 #### For Farm Employee Directory:
 ```bash
@@ -230,11 +271,26 @@ cd 3.employee-directory
 npm install
 npm start
 ```
-The app will launch at `http://localhost:3000`.
 
-To run tests in the Farm Employee Directory:
+#### For Weather Dashboard:
 ```bash
-npm test -- --watchAll=false
+cd 4.weather-dashboard
+npm install
+npm start
+```
+
+#### For Online Shopping Cart:
+```bash
+cd 5.online-shopping-cart
+npm install
+npm run dev
+```
+
+#### For Task Manager with Routing:
+```bash
+cd 6.task-manager-with-routing
+npm install
+npm start
 ```
 
 ---

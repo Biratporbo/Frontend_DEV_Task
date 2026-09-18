@@ -1,0 +1,71 @@
+.add-task-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-task-container {
+  max-width: 720px;
+}
+
+.task-form-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.req {
+  color: var(--priority-high);
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.auto-timestamp-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+.auto-timestamp-icon {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.auto-timestamp-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.auto-timestamp-content code {
+  color: var(--primary);
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.form-action-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 640px) {
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -15,7 +15,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
 | **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | [Live Demo 🌐](https://4weather-dashboard.vercel.app) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
 | **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | [Live Demo 🌐](https://5online-shopping-cart.vercel.app) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
-| **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | *Local / Deployable* | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
+| **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | [Live Demo 🌐](https://6task-manager-with-routing.vercel.app) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
 
 ---
 
@@ -134,6 +134,7 @@ npm run dev
 
 A single-page task management application that heavily utilizes `react-router-dom` to handle navigation, protected routes, and dynamic URL parameters.
 
+- **Live URL:** [https://6task-manager-with-routing.vercel.app](https://6task-manager-with-routing.vercel.app)
 - **Key Features:**
   - 🛡️ **Protected Routing:** Prevents access to the dashboard and tasks without "logging in" first.
   - 🔗 **Dynamic URLs:** Uses `/tasks/:id` to fetch and render full details for a specific task based on the URL parameter.

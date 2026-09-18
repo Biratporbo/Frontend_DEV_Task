@@ -1,0 +1,246 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 20px;
+}
+
+.modal-container {
+  background-color: #ffffff;
+  border-radius: var(--radius-lg);
+  max-width: 760px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: #f8fafc;
+}
+
+.modal-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.jwt-badge-icon {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+.modal-title-group h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.modal-title-group p {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  color: var(--text-main);
+}
+
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.token-status-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+}
+
+.token-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-label-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+}
+
+.copy-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: var(--primary-light);
+}
+
+.raw-token-box {
+  background-color: #0f172a;
+  border-radius: var(--radius-md);
+  padding: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.jwt-header-part {
+  color: #f87171;
+}
+
+.jwt-payload-part {
+  color: #c084fc;
+}
+
+.jwt-sig-part {
+  color: #60a5fa;
+}
+
+.jwt-dot {
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+.decoded-parts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.decoded-box {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.decoded-box-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  letter-spacing: 0.04em;
+}
+
+.header-title {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border-bottom: 1px solid #fee2e2;
+}
+
+.payload-title {
+  background-color: #faf5ff;
+  color: #7e22ce;
+  border-bottom: 1px solid #f3e8ff;
+}
+
+.code-block {
+  padding: 12px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.775rem;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #334155;
+  overflow-x: auto;
+}
+
+.token-test-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  gap: 12px;
+}
+
+.token-test-actions strong {
+  font-size: 0.85rem;
+  color: #991b1b;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.token-test-actions p {
+  font-size: 0.775rem;
+  color: #b91c1c;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border-color);
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 640px) {
+  .decoded-parts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

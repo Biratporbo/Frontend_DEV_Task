@@ -2,10 +2,9 @@
 
 A modular, responsive React application built to demonstrate **Props**, **Component Reusability**, and **Hierarchical Data Passing**, featuring dynamic **CGPA Sorting** and real-time filtering.
 
-## Links
+## Link
 
 - **GitHub:** [Frontend_DEV_Task](https://github.com/Biratporbo/Frontend_DEV_Task)
-- **Live site:** [2student-information.vercel.app](https://2student-information.vercel.app)
 
 ---
 

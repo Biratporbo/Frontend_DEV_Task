@@ -2,7 +2,6 @@
 
 A responsive and functional React web application built for managing farm staff records, employee details, and departmental allocation. The directory features full CRUD capabilities (Add, Edit, Delete), multi-criteria search, department filtering, and address management using React `useState()`, event handling, and conditional rendering.
 
-**Live Demo:** [https://3employee-directory.vercel.app](https://3employee-directory.vercel.app)
 
 ---
 

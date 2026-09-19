@@ -2,7 +2,6 @@
 
 A simple, responsive, and beautiful glassmorphism Weather Dashboard built with React. This application demonstrates the use of `fetch`, `async/await`, and the `useEffect` hook to integrate with the OpenWeatherMap API and display live weather data.
 
-**Live Demo:** [https://4weather-dashboard.vercel.app](https://4weather-dashboard.vercel.app)
 
 ## Features
 

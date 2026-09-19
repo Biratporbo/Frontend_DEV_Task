@@ -2,6 +2,7 @@
 
 A secure enterprise-grade single-page application built with **React 18** and **React Router v6**. Demonstrates a complete authentication system with simulated **JSON Web Tokens (JWT - RFC 7519)**, route protection, interactive password strength analytics, session management with Local and Session Storage, and an integrated Task Management workspace.
 
+**Live Demo:** [https://7implementauthenticationsystem.vercel.app](https://7implementauthenticationsystem.vercel.app)
 
 ## ✨ Security & Authentication Features
 

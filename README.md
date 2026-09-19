@@ -8,15 +8,15 @@ Each project is designed with a focus on clean architecture, component reusabili
 
 ## 📑 Projects Directory
 
-| # | Project Name | Directory | Live Demo | Core Concepts & Highlights |
-| :-: | :--- | :--- | :--- | :--- |
-| **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | [Live Demo 🌐](https://my-portfolio-eight-rust-78.vercel.app/) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
-| **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
-| **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
-| **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | [Live Demo 🌐](https://4weather-dashboard.vercel.app) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
-| **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | [Live Demo 🌐](https://5online-shopping-cart.vercel.app) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
-| **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | [Live Demo 🌐](https://6task-manager-with-routing.vercel.app) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
-| **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | [Live Demo 🌐](https://7implementauthenticationsystem.vercel.app) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
+| # | Project Name | Directory | Core Concepts & Highlights |
+| :-: | :--- | :--- | :--- |
+| **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
+| **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
+| **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
+| **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
+| **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
+| **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
+| **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
 
 ---
 
@@ -26,7 +26,6 @@ Each project is designed with a focus on clean architecture, component reusabili
 
 A clean, responsive personal portfolio website designed to showcase developer background, academic qualifications, technical skills, and contact channels in an intuitive single-page interface.
 
-- **Live URL:** [https://my-portfolio-eight-rust-78.vercel.app/](https://my-portfolio-eight-rust-78.vercel.app/)
 - **Key Features:**
   - 📱 **Mobile-First Responsive Layout:** Adapts seamlessly across mobile, tablet, and desktop viewports.
   - 🧭 **Structured Section Navigation:** Quick navigation between About, Education, Skills, and Contact sections.
@@ -46,7 +45,6 @@ npm start
 
 An interactive student directory portal demonstrating advanced **React Props passing**, **state orchestration**, **unidirectional data flow**, and **data manipulation** (sorting & filtering).
 
-- **Live URL:** [https://2student-information.vercel.app/](https://2student-information.vercel.app/)
 - **Key Features:**
   - 🧱 **Hierarchical Props Flow:** Strict prop-drilling architecture from root state (`App`) down through `Header`, `StudentList`, and individual `StudentCard` components.
   - 📊 **Dynamic CGPA Sorting:**
@@ -71,7 +69,6 @@ npm start
 
 A practical, clean, state-driven employee directory designed for a farm management system. It showcases robust **state management (`useState`)**, **event handling**, and **conditional rendering** to manage staff across diverse agricultural departments.
 
-- **Live URL:** [https://3employee-directory.vercel.app](https://3employee-directory.vercel.app)
 - **Key Features:**
   - 🌾 **Comprehensive Farm Staff Data:** Maintains Employee Name, ID, Department, Gender, Phone Number, Local Address, and Permanent Address.
   - ➕ **Add & Edit Records:** Interactive form with input validation, duplicate ID prevention, and an option to mirror local address to permanent address.
@@ -94,7 +91,6 @@ npm start
 
 A modern, stunning "glassmorphism" weather application demonstrating asynchronous API integration. It uses **`fetch`**, **`async/await`**, and the **`useEffect`** hook to retrieve live weather data from the OpenWeatherMap API.
 
-- **Live URL:** [https://4weather-dashboard.vercel.app](https://4weather-dashboard.vercel.app)
 - **Key Features:**
   - 🌡️ **Live Metrics:** Displays Temperature (Celsius), Humidity, Wind Speed, Sunrise, and Sunset times.
   - 🔍 **City Search:** Dynamic search bar to fetch weather for any valid city.
@@ -115,7 +111,6 @@ npm start
 
 A clean, attractive, and functional E-Commerce shopping cart. This project demonstrates advanced global state management using React's **Context API** and the **`useReducer`** hook.
 
-- **Live URL:** [https://5online-shopping-cart.vercel.app](https://5online-shopping-cart.vercel.app)
 - **Key Features:**
   - 🛍️ **Cart Management:** Add products, update quantities, and remove items dynamically.
   - 🧠 **Global State (`useReducer`):** Centralized logic for complex cart state.
@@ -135,7 +130,6 @@ npm run dev
 
 A single-page task management application that heavily utilizes `react-router-dom` to handle navigation, protected routes, and dynamic URL parameters.
 
-- **Live URL:** [https://6task-manager-with-routing.vercel.app](https://6task-manager-with-routing.vercel.app)
 - **Key Features:**
   - 🛡️ **Protected Routing:** Prevents access to the dashboard and tasks without "logging in" first.
   - 🔗 **Dynamic URLs:** Uses `/tasks/:id` to fetch and render full details for a specific task based on the URL parameter.
@@ -155,7 +149,6 @@ npm start
 
 A comprehensive authentication and security suite integrated with the Task Management workspace. Features RFC 7519 simulated JWT tokens, real-time password strength analytics, dual-mode persistence (localStorage/sessionStorage), and route protection.
 
-- **Live URL:** [https://7implementauthenticationsystem.vercel.app](https://7implementauthenticationsystem.vercel.app)
 - **Key Features:**
   - 🔑 **Simulated JWT Token (RFC 7519):** Generates and validates standard 3-part Base64Url tokens with encoded claims and expiration stamps.
   - 🛡️ **Interactive Token Inspector:** Dedicated modal to inspect raw token segments, decoded JSON claims, and test token invalidation.

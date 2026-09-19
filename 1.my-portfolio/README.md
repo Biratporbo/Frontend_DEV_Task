@@ -2,10 +2,10 @@
 
 A responsive React portfolio website for presenting personal information, education, technical skills, and contact details in a clean single-page layout.
 
-## Link
+## Links
 
 - **GitHub:** [Frontend_DEV_Task](https://github.com/Biratporbo/Frontend_DEV_Task)
-
+- **Live site:** [my-portfolio-eight-rust-78.vercel.app](https://my-portfolio-eight-rust-78.vercel.app/)
 
 ## Features
 

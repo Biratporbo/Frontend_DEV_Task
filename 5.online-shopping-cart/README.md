@@ -2,7 +2,7 @@
 
 A clean and attractive E-Commerce shopping cart built with React. This project demonstrates advanced state management using the **Context API** and the **`useReducer`** hook.
 
-**Live Demo:** [https://5online-shopping-cart.vercel.app](https://5online-shopping-cart.vercel.app)
+
 
 ## Features
 

@@ -1,0 +1,195 @@
+---
+
+## 📑 Projects Directory
+
+| # | Project Name | Directory | Live Demo | Core Concepts & Highlights |
+| :-: | :--- | :--- | :--- | :--- |
+| **01** | **Personal Portfolio** | [`/1.my-portfolio`](./1.my-portfolio) | [Live Demo 🌐](https://my-portfolio-eight-rust-78.vercel.app/) | Responsive single-page layout, modular sections, semantic HTML, modern CSS styling |
+| **02** | **Student Information Portal** | [`/2.student-information`](./2.student-information) | [Live Demo 🌐](https://2student-information.vercel.app/) | Props-driven architecture, CGPA sorting, real-time search & filtering, performance tiers, image fallbacks |
+| **03** | **Farm Employee Directory** | [`/3.employee-directory`](./3.employee-directory) | [Live Demo 🌐](https://3employee-directory.vercel.app) | State management (`useState`), Event handling, Conditional rendering, CRUD operations, Department filters |
+| **04** | **Weather Dashboard** | [`/4.weather-dashboard`](./4.weather-dashboard) | [Live Demo 🌐](https://4weather-dashboard.vercel.app) | API Integration (`fetch`), Async/Await, `useEffect`, Error Handling, OpenWeatherMap API |
+| **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | [Live Demo 🌐](https://5online-shopping-cart.vercel.app) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
+| **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | [Live Demo 🌐](https://6task-manager-with-routing.vercel.app) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
+| **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | [Live Demo 🌐](https://7implementauthenticationsystem.vercel.app) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
+| **08** | **Expense Tracker** | [`/8.expense-tracker`](./8.expense-tracker) | [Live Demo 🌐](https://8expense-tracker.vercel.app) | Controlled forms, LocalStorage persistence, Category filter, CSV export, Pie/Bar/Line analytics charts, Receipt/Product photo attachments |
+
+---
+
+## 🌟 Project Overviews
+
+### 1. [Personal Portfolio Website](./1.my-portfolio)
+
+A clean, responsive personal portfolio website designed to showcase developer background, academic qualifications, technical skills, and contact channels in an intuitive single-page interface.
+
+- **Live URL:** [https://my-portfolio-eight-rust-78.vercel.app/](https://my-portfolio-eight-rust-78.vercel.app/)
+- **Key Features:**
+  - 📱 **Mobile-First Responsive Layout:** Adapts seamlessly across mobile, tablet, and desktop viewports.
+  - 🧭 **Structured Section Navigation:** Quick navigation between About, Education, Skills, and Contact sections.
+  - 🧩 **Modular Component Design:** Clean separation of concerns with standalone components for each section (`Header`, `About`, `Education`, `Skills`, `Contact`, `Footer`).
+  - ⚡ **Optimized Performance:** Fast load times with zero bloat and clean CSS styling.
+
+#### Quick Run:
+```bash
+cd 1.my-portfolio
+npm install
+npm start
+```
+
+---
+
+### 2. [Student Information Management Portal](./2.student-information)
+
+An interactive student directory portal demonstrating advanced **React Props passing**, **state orchestration**, **unidirectional data flow**, and **data manipulation** (sorting & filtering).
+
+- **Live URL:** [https://2student-information.vercel.app/](https://2student-information.vercel.app/)
+- **Key Features:**
+  - 🧱 **Hierarchical Props Flow:** Strict prop-drilling architecture from root state (`App`) down through `Header`, `StudentList`, and individual `StudentCard` components.
+  - 📊 **Dynamic CGPA Sorting:**
+    - High-to-Low (↓) with automated real-time rank computation (`Rank #1`, `Rank #2`, etc.).
+    - Low-to-High (↑) sorting.
+    - Default roster reset (↺).
+  - 🔍 **Real-Time Filtering & Search:** Instant multi-field search (by student name or roll number) coupled with department dropdown filtering.
+  - 🎨 **Visual Performance Indicators:** Color-coded CGPA badges and progress meters indicating performance tiers (Outstanding / Dean's List, Very Good, Good, Satisfactory).
+  - 🛡️ **Graceful Fallbacks:** SVG avatar fallback mechanism for handling broken or missing profile images without layout shifts.
+  - 🧪 **Unit Tested:** Comprehensive test suite validating sorting, filtering, and component rendering using Jest & React Testing Library.
+
+#### Quick Run:
+```bash
+cd 2.student-information
+npm install
+npm start
+```
+
+---
+
+### 3. [Farm Employee Directory](./3.employee-directory)
+
+A practical, clean, state-driven employee directory designed for a farm management system. It showcases robust **state management (`useState`)**, **event handling**, and **conditional rendering** to manage staff across diverse agricultural departments.
+
+- **Live URL:** [https://3employee-directory.vercel.app](https://3employee-directory.vercel.app)
+- **Key Features:**
+  - 🌾 **Comprehensive Farm Staff Data:** Maintains Employee Name, ID, Department, Gender, Phone Number, Local Address, and Permanent Address.
+  - ➕ **Add & Edit Records:** Interactive form with input validation, duplicate ID prevention, and an option to mirror local address to permanent address.
+  - 🗑️ **Delete with Confirmation:** Safe deletion workflow with browser confirmation prompts and feedback messages.
+  - 🔍 **Real-time Search:** Instant search across employee names, IDs, and phone numbers.
+  - 🏢 **Department Filtering:** Quick filter dropdown to isolate staff by agricultural departments or view all departments combined.
+  - 📊 **Dynamic Employee Counters:** Live status counters showing total staff, matching records, and active departments.
+  - 👁️ **Full Address Inspector:** Modal dialog to view complete local and permanent addresses without cluttering table rows.
+
+#### Quick Run:
+```bash
+cd 3.employee-directory
+npm install
+npm start
+```
+
+---
+
+### 4. [Weather Dashboard](./4.weather-dashboard)
+
+A modern, stunning "glassmorphism" weather application demonstrating asynchronous API integration. It uses **`fetch`**, **`async/await`**, and the **`useEffect`** hook to retrieve live weather data from the OpenWeatherMap API.
+
+- **Live URL:** [https://4weather-dashboard.vercel.app](https://4weather-dashboard.vercel.app)
+- **Key Features:**
+  - 🌡️ **Live Metrics:** Displays Temperature (Celsius), Humidity, Wind Speed, Sunrise, and Sunset times.
+  - 🔍 **City Search:** Dynamic search bar to fetch weather for any valid city.
+  - 🖼️ **Dynamic Icons:** Renders official OpenWeatherMap image icons based on current weather conditions.
+  - ⏳ **Loading State:** Includes a clean CSS loading spinner during network requests.
+  - 🛡️ **Error Handling:** Robust error management for invalid cities, network failures, or missing API keys.
+
+#### Quick Run:
+```bash
+cd 4.weather-dashboard
+npm install
+npm start
+```
+
+---
+
+### 5. [Online Shopping Cart](./5.online-shopping-cart)
+
+A clean, attractive, and functional E-Commerce shopping cart. This project demonstrates advanced global state management using React's **Context API** and the **`useReducer`** hook.
+
+- **Live URL:** [https://5online-shopping-cart.vercel.app](https://5online-shopping-cart.vercel.app)
+- **Key Features:**
+  - 🛍️ **Cart Management:** Add products, update quantities, and remove items dynamically.
+  - 🧠 **Global State (`useReducer`):** Centralized logic for complex cart state.
+  - 🎟️ **Promotional Coupons:** Apply discount codes (`SAVE10`, `SAVE20`) to dynamically reduce the subtotal by a percentage.
+  - 📊 **Financial Breakdown:** Calculates Subtotal, Coupon Discounts, GST (18%), and Grand Total.
+
+#### Quick Run:
+```bash
+cd 5.online-shopping-cart
+npm install
+npm run dev
+```
+
+---
+
+### 6. [Task Manager with Routing](./6.task-manager-with-routing)
+
+A single-page task management application that heavily utilizes `react-router-dom` to handle navigation, protected routes, and dynamic URL parameters.
+
+- **Live URL:** [https://6task-manager-with-routing.vercel.app](https://6task-manager-with-routing.vercel.app)
+- **Key Features:**
+  - 🛡️ **Protected Routing:** Prevents access to the dashboard and tasks without "logging in" first.
+  - 🔗 **Dynamic URLs:** Uses `/tasks/:id` to fetch and render full details for a specific task based on the URL parameter.
+  - 📝 **Task Management:** Create, view, update, and close tasks. Tasks feature priorities, categories, and due dates.
+  - 📁 **Central State:** State is maintained via `Context API` so it persists across all route changes.
+
+#### Quick Run:
+```bash
+cd 6.task-manager-with-routing
+npm install
+npm start
+```
+
+---
+
+### 7. [Authentication System & Secure Task Workspace](./7.implement_authentication_system)
+
+A comprehensive authentication and security suite integrated with the Task Management workspace. Features RFC 7519 simulated JWT tokens, real-time password strength analytics, dual-mode persistence (localStorage/sessionStorage), and route protection.
+
+- **Live URL:** [https://7implementauthenticationsystem.vercel.app](https://7implementauthenticationsystem.vercel.app)
+- **Key Features:**
+  - 🔑 **Simulated JWT Token (RFC 7519):** Generates and validates standard 3-part Base64Url tokens with encoded claims and expiration stamps.
+  - 🛡️ **Interactive Token Inspector:** Dedicated modal to inspect raw token segments, decoded JSON claims, and test token invalidation.
+  - 📊 **Password Strength Evaluator:** Real-time entropy scoring (Weak, Fair, Good, Strong) with visual bar and live requirement indicators.
+  - 📝 **Input Validation:** Enforces non-empty username and password fields with inline touch-state error notifications.
+  - 💾 **Remember User:** Toggles token persistence between `localStorage` (persistent) and `sessionStorage` (active session only).
+  - 💼 **Task Management Integration:** Full protected workspace featuring Dashboard analytics, Active Tasks filters, Add Task, and Completed Archive. 
+
+#### Quick Run:
+```bash
+cd 7.implement_authentication_system
+npm install
+npm start
+```
+
+---
+
+### 8. [Expense Tracker SPA](./8.expense-tracker)
+
+A responsive single-page Expense & Income Tracker application enabling users to record, manage, categorize, search, filter, and visually analyze personal financial transactions. Features controlled forms with instant input validation, local storage synchronization, CSV data export, interactive SVG trend charts, and product picture / receipt attachment previews.
+
+- **Live URL:** [https://8expense-tracker.vercel.app](https://8expense-tracker.vercel.app)
+- **Key Features:**
+  - 📝 **Controlled Form Components:** Interactive modal form with instant field validation, error feedback, and support for both expenses and incomes.
+  - 📷 **Product & Receipt Attachments:** Attach item photos or receipts via device upload (Base64), quick preset product photos, or image URLs, with full-screen inspector modal.
+  - 💳 **Monthly Financial Summary:** Real-time computation of Net Balance, Total Income, Total Expenses, and Net Savings Rate with month-by-month scoping.
+  - 🔍 **Real-Time Search & Filtering:** Filter by transaction category, type (expense vs income), month period, and sort by date or amount.
+  - 📊 **Visual Analytics & Trend Charts:**
+    - Donut / Pie Chart for expenses by category with percentages and interactive tooltips.
+    - Grouped Bar Chart comparing monthly Income vs Expenses.
+    - Connected Line Chart displaying day-by-day expense curve and spending spikes.
+  - 📥 **CSV Data Export:** One-click generation and download of formatted transaction reports.
+  - 💾 **LocalStorage Persistence:** Automatic sync with browser storage and built-in sample dataset restoration.
+
+#### Quick Run:
+```bash
+cd 8.expense-tracker
+npm install
+npm start
+```
+
+---

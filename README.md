@@ -25,6 +25,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **05** | **Online Shopping Cart** | [`/5.online-shopping-cart`](./5.online-shopping-cart) | Global State Management, `useReducer`, Context API, Dynamic totals & tax computation |
 | **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
 | **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
+| **08** | **Expense Tracker** | [`/8.expense-tracker`](./8.expense-tracker) | Controlled forms, LocalStorage persistence, Category filter, CSV export, Pie/Bar/Line analytics charts, Receipt/Product photo attachments |
 
 ---
 
@@ -174,6 +175,31 @@ npm start
 
 ---
 
+### 8. [Expense Tracker SPA](./8.expense-tracker)
+
+A responsive single-page Expense & Income Tracker application enabling users to record, manage, categorize, search, filter, and visually analyze personal financial transactions. Features controlled forms with instant input validation, local storage synchronization, CSV data export, interactive SVG trend charts, and product picture / receipt attachment previews.
+
+- **Key Features:**
+  - 📝 **Controlled Form Components:** Interactive modal form with instant field validation, error feedback, and support for both expenses and incomes.
+  - 📷 **Product & Receipt Attachments:** Attach item photos or receipts via device upload (Base64), quick preset product photos, or image URLs, with full-screen inspector modal.
+  - 💳 **Monthly Financial Summary:** Real-time computation of Net Balance, Total Income, Total Expenses, and Net Savings Rate with month-by-month scoping.
+  - 🔍 **Real-Time Search & Filtering:** Filter by transaction category, type (expense vs income), month period, and sort by date or amount.
+  - 📊 **Visual Analytics & Trend Charts:**
+    - Donut / Pie Chart for expenses by category with percentages and interactive tooltips.
+    - Grouped Bar Chart comparing monthly Income vs Expenses.
+    - Connected Line Chart displaying day-by-day expense curve and spending spikes.
+  - 📥 **CSV Data Export:** One-click generation and download of formatted transaction reports.
+  - 💾 **LocalStorage Persistence:** Automatic sync with browser storage and built-in sample dataset restoration.
+
+#### Quick Run:
+```bash
+cd 8.expense-tracker
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -245,6 +271,17 @@ Frontend_DEV_Task/
 │   │   ├── services/               # jwtService (RFC 7519), passwordStrength
 │   │   ├── pages/                  # Login, Dashboard, TasksLayout, Tasks, AddTask, TaskDetails, EditTask, CompletedTasks
 │   │   ├── App.css / .js
+│   │   └── index.css / .js
+│   ├── package.json
+│   └── README.md
+│
+├── 8.expense-tracker/              # Project 8: Expense Tracker SPA
+│   ├── public/
+│   ├── src/
+│   │   ├── components/             # Charts, Modals, FilterToolbar, SummaryCards, TransactionForm, TransactionList
+│   │   ├── data/                   # categories, initialData, presetImages
+│   │   ├── utils/                  # storage, formatters, csvExport
+│   │   ├── App.css / .js / .test.js
 │   │   └── index.css / .js
 │   ├── package.json
 │   └── README.md
@@ -331,6 +368,13 @@ npm start
 #### For Authentication System:
 ```bash
 cd 7.implement_authentication_system
+npm install
+npm start
+```
+
+#### For Expense Tracker:
+```bash
+cd 8.expense-tracker
 npm install
 npm start
 ```

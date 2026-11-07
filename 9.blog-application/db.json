@@ -1,0 +1,79 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Mastering React 19: Actions, useActionState, and Future-Proof Patterns",
+      "author": "Birat Dey",
+      "authorRole": "Frontend Architect",
+      "category": "React & Frontend",
+      "coverImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1000&q=80",
+      "videoUrl": "https://www.youtube.com/embed/8pDqJVdNa44",
+      "excerpt": "A deep dive into React 19's groundbreaking features including Actions, optimistic UI updates, and compiler enhancements.",
+      "content": "React 19 marks one of the most substantial evolutionary steps in modern component architecture since the introduction of Hooks. For years, developers have spent immense effort writing repetitive boilerplate to handle pending states, optimistic updates, and form submissions. With the arrival of first-class Actions and the useActionState hook, asynchronous UI coordination is finally treated as a native primitive.\n\nActions streamline the way components communicate with backend REST endpoints. Instead of managing manual isLoading flags, try-catch wrappers, and error states across multiple component tiers, Actions allow functions to return state transitions automatically. Combined with useOptimistic, developers can build snappy, responsive interfaces that reflect optimistic data before the network request finishes round-tripping to the server.\n\nFurthermore, the React Compiler eliminates the mental friction of memorizing when and where to apply useMemo and useCallback. By analyzing JavaScript semantics at build time, the compiler automatically memoizes component outputs and function references, eliminating accidental re-renders while keeping codebase clean and human-readable. Whether you are building complex single page applications or micro-frontends, adopting these new primitives will significantly accelerate your delivery workflow and improve runtime performance.",
+      "tags": ["react", "javascript", "webdev", "frontend"],
+      "readTime": "4 min read",
+      "date": "2026-11-04",
+      "createdAt": 1730700000000
+    },
+    {
+      "id": "2",
+      "title": "Building Resilient REST APIs with Clean Architecture and Axios",
+      "author": "Sophia Vance",
+      "authorRole": "Full-Stack Engineer",
+      "category": "API & Backend",
+      "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80",
+      "videoUrl": "https://www.youtube.com/embed/GZvSYJDk-us",
+      "excerpt": "Learn how to structure Axios clients with interceptors, automated retry strategies, and fail-safe local persistence fallbacks.",
+      "content": "In client-heavy frontend engineering, the reliability of your HTTP layer dictates the overall stability of your user experience. While raw fetch provides a baseline for making requests, robust production web apps rely on Axios for its unified request-response lifecycle, timeout controls, and automated JSON transformation.\n\nImplementing custom interceptors allows developers to centralize cross-cutting concerns such as authorization tokens, global error handling, and request telemetry. For instance, when a REST endpoint returns an HTTP 500 or experiences transient connectivity drops, an exponential backoff interceptor can retry the operation seamlessly without user intervention.\n\nAdditionally, combining Axios with a mock backend like JSON Server during early development cycles allows teams to prototype full CRUD flows before production databases are provisioned. Decoupling the data layer through a dedicated service module ensures that switching from mock endpoints to production gateways requires changing only a single base URL configuration. Clean architecture principles keep your UI components focused strictly on presentation and state handling.",
+      "tags": ["axios", "rest-api", "architecture", "nodejs"],
+      "readTime": "5 min read",
+      "date": "2026-11-05",
+      "createdAt": 1730786400000
+    },
+    {
+      "id": "3",
+      "title": "The Art of Modern UI/UX: Micro-Interactions and Visual Hierarchy",
+      "author": "Elena Rostova",
+      "authorRole": "Lead Product Designer",
+      "category": "Design & UX",
+      "coverImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80",
+      "videoUrl": "",
+      "excerpt": "Exploring why subtle micro-interactions, deliberate spacing, and typography scale transform ordinary web apps into memorable experiences.",
+      "content": "Design is not merely how an interface looks; it is fundamentally about how intuitive and predictable it feels under continuous interaction. When users interact with a digital product, they rely on subconscious feedback loops to confirm their actions: button hover states, gentle elevation transitions, and responsive loading indicators all communicate system status.\n\nVisual hierarchy serves as the invisible guiding hand that leads the eye across a webpage. By establishing a coherent typography scale—pairing high-contrast headline fonts with readable body typefaces—readers can effortlessly scan articles, identify key concepts, and digest long-form paragraphs without fatigue.\n\nMicro-interactions, such as smooth toast notifications, confirmation dialogs, and real-time word count meters, instill confidence in user input. When designing applications, resist the temptation of excessive ornamentation. Instead, focus on purpose-driven whitespace, semantic color coding for alerts, and fluid accessibility so every user enjoys a barrier-free experience.",
+      "tags": ["design", "ux", "css", "typography"],
+      "readTime": "3 min read",
+      "date": "2026-11-06",
+      "createdAt": 1730872800000
+    },
+    {
+      "id": "4",
+      "title": "TypeScript 5.x Deep Dive: Generics, Template Literals, and Type Safety",
+      "author": "Marcus Sterling",
+      "authorRole": "Software Architect",
+      "category": "TypeScript",
+      "coverImage": "https://images.unsplash.com/photo-1516116211227-bbc13c0ff33a?auto=format&fit=crop&w=1000&q=80",
+      "videoUrl": "https://www.youtube.com/embed/BCg4U1FzODs",
+      "excerpt": "Demystifying advanced TypeScript techniques that eliminate runtime bugs and enhance developer ergonomics across large codebases.",
+      "content": "Static typing in JavaScript was once viewed by critics as excessive ceremony. Today, TypeScript is universally recognized as an essential foundation for building scalable, maintainable enterprise software. Modern TypeScript versions have transformed type definitions from static declarations into a expressive meta-language.\n\nGenerics enable developers to author reusable algorithms that adapt dynamically to any input data structure while preserving strict type validation. When coupled with template literal types, developers can define string patterns like event names, CSS units, or REST route parameters that catch typos during compilation rather than in production logs.\n\nFurthermore, const assertions and satisfactory operators allow immutability and narrow inference without sacrificing developer flexibility. Investing time into understanding the TypeScript compiler and type inference system will pay massive dividends in long-term codebase hygiene and team productivity.",
+      "tags": ["typescript", "javascript", "programming", "coding"],
+      "readTime": "4 min read",
+      "date": "2026-11-06",
+      "createdAt": 1730880000000
+    },
+    {
+      "id": "5",
+      "title": "Optimizing Web Performance: Core Web Vitals and Efficient Asset Loading",
+      "author": "Aria Chen",
+      "authorRole": "Performance Engineer",
+      "category": "Web Performance",
+      "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80",
+      "videoUrl": "",
+      "excerpt": "Practical techniques to reduce Largest Contentful Paint, eliminate Cumulative Layout Shift, and deliver blazing fast load speeds.",
+      "content": "In an era of mobile-first browsing, page speed is a non-negotiable metric that directly impacts user retention and search engine discovery. Google's Core Web Vitals provide concrete thresholds for measuring real-world user perception: loading responsiveness (LCP), visual stability (CLS), and interaction latency (INP).\n\nAsset optimization forms the frontline of performance engineering. Serving modern image formats like AVIF or WebP reduces byte payload by up to seventy percent compared to legacy PNGs. Implementing explicit width and height dimensions prevents jarring layout shifts when images hydrate on screen.\n\nOn the JavaScript side, code splitting using React dynamic imports ensures that clients only download the script bundles necessary for the current view. Caching static assets with aggressive HTTP cache-control headers turns repeat visits into near-instantaneous experiences. Treating performance as a core feature rather than an afterthought is essential for modern web engineering.",
+      "tags": ["performance", "webvitals", "optimization", "seo"],
+      "readTime": "3 min read",
+      "date": "2026-11-07",
+      "createdAt": 1730966400000
+    }
+  ]
+}

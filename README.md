@@ -26,6 +26,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **06** | **Task Manager with Routing** | [`/6.task-manager-with-routing`](./6.task-manager-with-routing) | React Router (`react-router-dom`), Protected Routes, URL Parameters (`useParams`) |
 | **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
 | **08** | **Expense Tracker** | [`/8.expense-tracker`](./8.expense-tracker) | Controlled forms, LocalStorage persistence, Category filter, CSV export, Pie/Bar/Line analytics charts, Receipt/Product photo attachments |
+| **09** | **Blog Application** | [`/9.blog-application`](./9.blog-application) | REST API CRUD, JSON Server mock backend, Axios client, 1000-word limit guard, Video/Image embeds, Keyword search |
 
 ---
 
@@ -200,6 +201,28 @@ npm start
 
 ---
 
+### 9. [Blog Application using CRUD & REST API](./9.blog-application)
+
+A responsive single-page Blog Application built with **React.js**, **Axios**, and **JSON Server** that allows users to create, view, update, and delete rich blog posts with text, images, and embedded video presentations. The application strictly enforces a 1,000-word maximum content limit and provides comprehensive error and loading state management.
+
+- **Key Features:**
+  - 📝 **Full CRUD Operations:** Seamless Create, Read, Update, and Delete workflows powered by Axios HTTP calls.
+  - 🛡️ **1,000-Word Content Limit:** Real-time live word count meter and progress bar preventing submission when the 1,000-word threshold is exceeded.
+  - 🎥 **Rich Multimedia Support:** Dedicated fields for custom cover images and interactive embedded video players (YouTube/Vimeo).
+  - 🔍 **Real-Time Keyword Search & Filters:** Instant search querying across titles, author names, categories, tags, and article text.
+  - ⚙️ **JSON Server Mock REST API:** Built-in `db.json` collection with preloaded articles and mock server scripts.
+  - 🛡️ **Error & Information Handling:** Loading spinner during network requests, clear error alert with retry functionality, and contextual empty state notices.
+  - 🔄 **Resilient Storage Fallback:** Graceful failover to local persistent storage for static deployments.
+
+#### Quick Run:
+```bash
+cd 9.blog-application
+npm install
+npm run dev
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -283,6 +306,19 @@ Frontend_DEV_Task/
 │   │   ├── utils/                  # storage, formatters, csvExport
 │   │   ├── App.css / .js / .test.js
 │   │   └── index.css / .js
+│   ├── package.json
+│   └── README.md
+│
+├── 9.blog-application/             # Project 9: Blog Application using CRUD
+│   ├── public/
+│   ├── src/
+│   │   ├── components/             # BlogList, BlogCard, BlogDetail, BlogForm, DeleteModal, LoadingSpinner, ErrorMessage
+│   │   ├── data/                   # categories, initialBlogs, presetCovers
+│   │   ├── services/               # api (Axios REST API service)
+│   │   ├── utils/                  # wordCounter, videoHelper
+│   │   ├── App.css / .js / .test.js
+│   │   └── index.css / .js
+│   ├── db.json
 │   ├── package.json
 │   └── README.md
 │
@@ -377,6 +413,13 @@ npm start
 cd 8.expense-tracker
 npm install
 npm start
+```
+
+#### For Blog Application:
+```bash
+cd 9.blog-application
+npm install
+npm run dev
 ```
 
 ---

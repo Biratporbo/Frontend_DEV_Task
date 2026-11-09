@@ -27,6 +27,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **07** | **Authentication System** | [`/7.implement_authentication_system`](./7.implement_authentication_system) | Simulated JWT (RFC 7519), Route Protection, Password Strength Analysis, Remember User (Local/Session) |
 | **08** | **Expense Tracker** | [`/8.expense-tracker`](./8.expense-tracker) | Controlled forms, LocalStorage persistence, Category filter, CSV export, Pie/Bar/Line analytics charts, Receipt/Product photo attachments |
 | **09** | **Blog Application** | [`/9.blog-application`](./9.blog-application) | REST API CRUD, JSON Server mock backend, Axios client, 1000-word limit guard, Video/Image embeds, Keyword search |
+| **10** | **Movie Search Application** | [`/10.movie-search-application`](./10.movie-search-application) | OMDb API, Debounced Live Search, Ratings breakdown, Poster fallbacks, Pagination, Favorites Watchlist |
 
 ---
 
@@ -223,6 +224,28 @@ npm run dev
 
 ---
 
+### 10. [Movie Search Application](./10.movie-search-application)
+
+A responsive single-page Movie Search Application powered by the **OMDb API**, featuring **Debounced Searching Optimization**, **Ratings Analysis**, **High-Resolution Poster Fallbacks**, **Dynamic Pagination**, and **Persistent Favorites Watchlist**.
+
+- **Key Features:**
+  - 🔍 **Debounced Search:** Custom `useDebounce` hook (500ms delay) preventing excessive API roundtrips and rate limits.
+  - 🎬 **Comprehensive Movie Details Modal:** Full plot storyline, directors, cast, awards, box office earnings, and direct IMDb links.
+  - 🍅 **Multi-Source Ratings:** Displays IMDb rating with votes, Rotten Tomatoes approval percentage, and Metacritic score.
+  - 🖼️ **Poster Fallback System:** High-res image display with film reel placeholder for titles without official art.
+  - 📄 **Dynamic Pagination:** Numbered page buttons with smart ellipsis, page range indicator, and auto-scroll navigation.
+  - ❤️ **Favorites Watchlist:** Add/remove titles with one click, in-watchlist keyword filter, multi-criteria sorting, and `localStorage` persistence.
+  - ⚙️ **In-App API Key Configuration:** Built-in settings modal to view or customize personal OMDb API keys.
+
+#### Quick Run:
+```bash
+cd 10.movie-search-application
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -319,6 +342,18 @@ Frontend_DEV_Task/
 │   │   ├── App.css / .js / .test.js
 │   │   └── index.css / .js
 │   ├── db.json
+│   ├── package.json
+│   └── README.md
+│
+├── 10.movie-search-application/    # Project 10: Movie Search Application
+│   ├── public/
+│   ├── src/
+│   │   ├── api/                    # omdbApi, fallbackData
+│   │   ├── components/             # MovieGrid, MovieCard, MovieDetailModal, SearchBar, Pagination, FavoritesView, Navbar
+│   │   ├── hooks/                  # useDebounce
+│   │   ├── styles/                 # App.css, index.css
+│   │   ├── App.js / .test.js
+│   │   └── index.js
 │   ├── package.json
 │   └── README.md
 │
@@ -420,6 +455,13 @@ npm start
 cd 9.blog-application
 npm install
 npm run dev
+```
+
+#### For Movie Search Application:
+```bash
+cd 10.movie-search-application
+npm install
+npm start
 ```
 
 ---

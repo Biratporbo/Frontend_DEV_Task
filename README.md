@@ -28,6 +28,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **08** | **Expense Tracker** | [`/8.expense-tracker`](./8.expense-tracker) | Controlled forms, LocalStorage persistence, Category filter, CSV export, Pie/Bar/Line analytics charts, Receipt/Product photo attachments |
 | **09** | **Blog Application** | [`/9.blog-application`](./9.blog-application) | REST API CRUD, JSON Server mock backend, Axios client, 1000-word limit guard, Video/Image embeds, Keyword search |
 | **10** | **Movie Search Application** | [`/10.movie-search-application`](./10.movie-search-application) | OMDb API, Debounced Live Search, Ratings breakdown, Poster fallbacks, Pagination, Favorites Watchlist |
+| **11** | **React Order Analytics Dashboard** | [`/11.react-dashboard`](./11.react-dashboard) | Material UI, Recharts Line & Pie Charts, KPI widgets (Revenue/Sales/Orders/Customers), Date/Category/Status Filters, Colored status indicators |
 
 ---
 
@@ -246,6 +247,27 @@ npm start
 
 ---
 
+### 11. [React Order Analytics Dashboard](./11.react-dashboard)
+
+An interactive single-page **Order Management Analytics Dashboard** built with **React**, **Material UI**, and **Recharts**, visualizing KPI metrics, Revenue & Sales trends, Order Status distributions, and filterable recent orders with product imagery.
+
+- **Key Features:**
+  - 📊 **Executive KPI Widgets:** Real-time calculation of **Revenue**, **Sales** (units sold), **Orders**, and unique **Customers** across active filters.
+  - 📈 **Revenue & Sales Trend (Line Chart):** Dual-axis Recharts LineChart tracking daily revenue (`$`) vs. unit volume over time.
+  - 🥧 **Order Status Distribution (Pie Chart):** Interactive Recharts PieChart with percentage breakdown and click-to-filter support.
+  - 🚦 **Colored Status Indicators:** Distinct semantic badges for **Completed** (Green), **Processing** (Blue), **Pending** (Amber), and **Cancelled** (Red).
+  - 🔎 **Multi-Criteria Filters:** Filter dynamically by **Date Range** (presets & custom date inputs), **Category**, **Order Status**, and search keywords.
+  - 📋 **Recent Orders Data Table:** Material UI sortable and paginated table featuring product photos, customer avatars, status chips, interactive Order Detail Dialog (with live status updates), and CSV export.
+
+#### Quick Run:
+```bash
+cd 11.react-dashboard
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -357,6 +379,18 @@ Frontend_DEV_Task/
 │   ├── package.json
 │   └── README.md
 │
+├── 11.react-dashboard/             # Project 11: React Order Analytics Dashboard
+│   ├── public/
+│   ├── src/
+│   │   ├── components/             # Header, FilterBar, KpiWidgets, RevenueSalesChart, OrderStatusChart, RecentOrdersTable, StatusChip, OrderDetailDialog
+│   │   ├── data/                   # mockOrders
+│   │   ├── utils/                  # analyticsHelpers
+│   │   ├── theme.js
+│   │   ├── App.js / .test.js
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
 └── README.md                       # Main repository README (this file)
 ```
 
@@ -460,6 +494,13 @@ npm run dev
 #### For Movie Search Application:
 ```bash
 cd 10.movie-search-application
+npm install
+npm start
+```
+
+#### For React Order Analytics Dashboard:
+```bash
+cd 11.react-dashboard
 npm install
 npm start
 ```

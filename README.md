@@ -29,6 +29,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **09** | **Blog Application** | [`/9.blog-application`](./9.blog-application) | REST API CRUD, JSON Server mock backend, Axios client, 1000-word limit guard, Video/Image embeds, Keyword search |
 | **10** | **Movie Search Application** | [`/10.movie-search-application`](./10.movie-search-application) | OMDb API, Debounced Live Search, Ratings breakdown, Poster fallbacks, Pagination, Favorites Watchlist |
 | **11** | **React Order Analytics Dashboard** | [`/11.react-dashboard`](./11.react-dashboard) | Material UI, Recharts Line & Pie Charts, KPI widgets (Revenue/Sales/Orders/Customers), Date/Category/Status Filters, Colored status indicators |
+| **12** | **Redux E-Commerce Application** | [`/12.e-commerce-application`](./12.e-commerce-application) | Redux Toolkit (configureStore, createSlice, createAsyncThunk, createEntityAdapter, extraReducers), Fake Store API, Memoized Selectors, Custom Action Logger & Analytics Middleware, Multi-step Checkout, Order History, Persistent Cart |
 
 ---
 
@@ -268,6 +269,30 @@ npm start
 
 ---
 
+### 12. [Redux E-Commerce Application](./12.e-commerce-application)
+
+A responsive Single Page E-Commerce Application powered by **React 18** and **Redux Toolkit (RTK)** connecting to the **Fake Store API** with integrated fallback data resilience, managing product normalization, memoized cart calculations, custom telemetry middleware, local persistence, simulated authentication, multi-step checkout, and order histories.
+
+- **Key Features:**
+  - 🏪 **Redux Toolkit Architecture:** Centralized store configured with `configureStore()`, slice reducers (`createSlice`), builder callback lifecycle handling (`extraReducers`), and normalized entities (`createEntityAdapter`).
+  - 🔄 **Fake Store API & Resilient Fallback:** Asynchronous product retrieval using `createAsyncThunk` (`fetchProducts`, `fetchProductById`) with automated seamless failover to an embedded catalog dataset.
+  - 🧮 **Memoized Selectors (`createSelector`):** Dynamic, memoized financial computations for subtotal, percentage discounts (`SAVE10`, `WELCOME20`), state tax, conditional free shipping, and payable total.
+  - 📊 **Custom Middleware Telemetry:** Real-time action logging with execution duration metrics and commerce analytics event tracking (`ecom_add_to_cart`, `ecom_coupon_applied`, `ecom_purchase_completed`, `user_authenticated`).
+  - 🛒 **Interactive Cart Drawer:** Slide-over cart drawer with quantity adjustments, promotional coupon codes, and empty state guidance.
+  - 🔐 **Simulated Authentication & Protected Views:** Quick one-click Demo Sign-In as customer "Alex Turner", credential form, and route/modal protection for checkout and past orders.
+  - 💳 **Multi-Step Checkout & Confirmation:** 3-step checkout wizard (Shipping Address → Payment Method → Review & Submit) with 1.5s simulated async payment gateway roundtrip, order receipts, and order history tracking.
+  - 💾 **State Persistence:** LocalStorage synchronization preserving cart contents, applied discount coupons, authentication sessions, and past orders across browser refreshes.
+  - 🧪 **Automated Testing:** Comprehensive Jest and React Testing Library test suite validating reducers, selectors, async flows, and component integration.
+
+#### Quick Run:
+```bash
+cd 12.e-commerce-application
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -391,6 +416,19 @@ Frontend_DEV_Task/
 │   ├── package.json
 │   └── README.md
 │
+├── 12.e-commerce-application/       # Project 12: Redux E-Commerce Application
+│   ├── public/
+│   ├── src/
+│   │   ├── app/                    # store, hooks
+│   │   ├── components/             # auth, cart, checkout, common, orders, products
+│   │   ├── features/               # authSlice, cartSlice/cartSelectors, ordersSlice, productsSlice/productSelectors, fallbackProducts
+│   │   ├── middleware/             # actionLoggerMiddleware, analyticsMiddleware
+│   │   ├── styles/                 # App.css, index.css
+│   │   ├── App.js / .test.js
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
 └── README.md                       # Main repository README (this file)
 ```
 
@@ -501,6 +539,13 @@ npm start
 #### For React Order Analytics Dashboard:
 ```bash
 cd 11.react-dashboard
+npm install
+npm start
+```
+
+#### For Redux E-Commerce Application:
+```bash
+cd 12.e-commerce-application
 npm install
 npm start
 ```

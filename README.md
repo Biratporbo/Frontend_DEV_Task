@@ -30,6 +30,7 @@ Each project is designed with a focus on clean architecture, component reusabili
 | **10** | **Movie Search Application** | [`/10.movie-search-application`](./10.movie-search-application) | OMDb API, Debounced Live Search, Ratings breakdown, Poster fallbacks, Pagination, Favorites Watchlist |
 | **11** | **React Order Analytics Dashboard** | [`/11.react-dashboard`](./11.react-dashboard) | Material UI, Recharts Line & Pie Charts, KPI widgets (Revenue/Sales/Orders/Customers), Date/Category/Status Filters, Colored status indicators |
 | **12** | **Redux E-Commerce Application** | [`/12.e-commerce-application`](./12.e-commerce-application) | Redux Toolkit (configureStore, createSlice, createAsyncThunk, createEntityAdapter, extraReducers), Fake Store API, Memoized Selectors, Custom Action Logger & Analytics Middleware, Multi-step Checkout, Order History, Persistent Cart |
+| **13** | **Student Attendance Management System** | [`/13.student-attendance-management-system`](./13.student-attendance-management-system) | Redux Toolkit (configureStore, multiple slices, createAsyncThunk, extraReducers), Student CRUD, Class Attendance Marking, P/A/L/PL/E status tracking, Duplicate entry prevention, Memoized derived state & percentage calculations, Configurable threshold alerts (< 45%), Recharts analytics, Daily/Monthly reports & CSV export |
 
 ---
 
@@ -293,6 +294,31 @@ npm start
 
 ---
 
+### 13. [Student Attendance Management System](./13.student-attendance-management-system)
+
+A comprehensive, state-driven **Student Attendance Management System** built with **React 18** and **Redux Toolkit (RTK)**. It empowers faculty and academic administrators to manage student rosters, record daily class session marks, calculate derived individual attendance percentages, configure low-attendance warning alerts (< 45%), analyze trends via Recharts, and export reports to CSV.
+
+- **Key Features:**
+  - 🏛️ **Redux Toolkit Architecture:** Centralized application store configured via `configureStore()`, separated into `students`, `attendance`, `subjects`, and `filters` domain slices.
+  - 👥 **Student Directory Management:** Add, edit, and delete student records with ID, Name, Department, Semester, Section, Roll Number, and Email. Includes real-time multi-field search and cohort filters.
+  - 📋 **Class Attendance Marking:** Session selector (Date, Subject, Semester, Section) displaying registered students. Status categories: **Present (P)**, **Absent (A)**, **Late (L = 0.5 credit)**, **Internship Placed (PL = excused)**, and **Official Engagement (E = excused)** with batch actions.
+  - 🛡️ **Duplicate Prevention:** Automatic collision detection updating existing records in-place for matching `(date, subject, studentId)` without duplicating entries.
+  - 🧮 **Memoized Derived Calculations:** Real-time percentage calculations and aggregations powered by `createSelector` across subjects, dates, and individual students.
+  - ⚠️ **Configurable Low Attendance Alerts:** Interactive threshold slider (defaults to **45%**, adjustable from 10% to 90%) identifying students at academic risk with class deficit tracking.
+  - 📊 **Visual Analytics & Recharts:** Interactive attendance rate bar charts across curricula and status distribution donut charts.
+  - 📑 **Daily/Monthly Reports & CSV Export:** Filtered audit logs by student, subject, semester, and date range with 1-click CSV file download.
+  - 💾 **State Persistence & Audit Trail:** LocalStorage persistence layer and custom compliance audit middleware tracking system actions.
+  - 🧪 **Automated Testing:** 9 unit and integration tests validating reducers, selectors, calculations, duplicate collision prevention, and UI rendering.
+
+#### Quick Run:
+```bash
+cd 13.student-attendance-management-system
+npm install
+npm start
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```text
@@ -429,6 +455,20 @@ Frontend_DEV_Task/
 │   ├── package.json
 │   └── README.md
 │
+├── 13.student-attendance-management-system/ # Project 13: Student Attendance Management System
+│   ├── public/
+│   ├── src/
+│   │   ├── app/                    # store, hooks
+│   │   ├── components/             # analytics, attendance, common, reports, students
+│   │   ├── features/               # attendance, filters, students, subjects
+│   │   ├── middleware/             # actionLoggerMiddleware, auditMiddleware
+│   │   ├── styles/                 # App.css, index.css
+│   │   ├── utils/                  # csvExporter, dateUtils
+│   │   ├── App.js / .test.js
+│   │   └── index.js
+│   ├── package.json
+│   └── README.md
+│
 └── README.md                       # Main repository README (this file)
 ```
 
@@ -546,6 +586,13 @@ npm start
 #### For Redux E-Commerce Application:
 ```bash
 cd 12.e-commerce-application
+npm install
+npm start
+```
+
+#### For Student Attendance Management System:
+```bash
+cd 13.student-attendance-management-system
 npm install
 npm start
 ```
